@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  cypress:
+    image: zerosuxx/cypress-browsersync
+    build: .
+    environment:
+      DISPLAY:
+    volumes:
+      - ./e2e:/e2e
+    working_dir: /e2e
+    ipc: host
+    network_mode: host
