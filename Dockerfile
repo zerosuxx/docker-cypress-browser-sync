@@ -1,5 +1,5 @@
-FROM cypress/included:5.1.0
+FROM cypress/included:5.5.0
 
-RUN npm install -g browser-sync
+RUN npm install -g browser-sync cypress-promise
 
 ENTRYPOINT []
