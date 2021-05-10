@@ -2,7 +2,7 @@ version: '3.6'
 
 services:
   cypress:
-    image: zerosuxx/cypress-browsersync
+    image: zerosuxx/cypress-browser-sync
     build: .
     environment:
       DISPLAY:
